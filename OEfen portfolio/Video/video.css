@@ -1,0 +1,303 @@
+
+* {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+ background-color:  rgb(9, 9, 11); 
+ margin: 0;
+ padding: 0;
+}
+
+/* navigatie start */
+.titel-nav {
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 50px;
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.links {
+  color: white;
+}
+
+nav {
+  position: fixed;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.home{
+  color: whitesmoke;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.los {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+.content {
+  margin: 50px 0px 0px 250px;
+}
+
+
+h1 {
+  color: whitesmoke;
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  padding-right: 0px;
+  margin-bottom: 50px;
+}
+
+
+.portfolio-mobiel, .mobiel {
+  display: none;
+}
+
+
+
+li a {
+  display: block;
+  text-align: left;
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 25px;
+  padding-right: 0px;
+}
+
+li a:hover {
+  color: orange;
+}
+
+/* navigatie eind */
+
+.info {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 18px;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+.uitleg {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 18px;
+  max-width: 80%;
+  margin-bottom: 25px;
+  padding: 0px 350px;
+}
+
+.uitleg-img {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.flexbox-item-video {
+  width: 1010px;
+  margin: 5px 5px;
+  height: auto;
+  cursor: default;
+}
+
+.flexbox-item-video-klein {
+  width: 500px;
+  margin: 5px 5px;
+  height: auto;
+  cursor: default;
+}
+
+.video {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px 0px 50px 0px;
+}
+
+.flexbox-item-projecten {
+  width: 500px;
+  margin: 5px 5px;
+  height: auto;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+footer {
+  color: white;
+  font-weight: 200;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .titel-nav {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    width: 90%;
+    margin: 10px 0px 0px 0px;
+    display: none;
+  }
+  
+  .mobiel {
+    display: block;
+    width: 100%;
+  }
+
+  .active {
+    font-weight: 500;
+    cursor: default;
+    margin-left: 5px;
+  }
+
+
+  .active:hover {
+    font-weight: 500;
+    color: white;
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px 5px;
+    background-color: rgb(9, 9, 11);
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+
+  .portfolio-mobiel{
+    display: block;
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: left;
+    margin: 20px 0px 10px 10px;
+  }
+
+  .content, .flexbox-container {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .content {
+    width: 100%;
+    left: 50%;
+  }
+  
+
+  .flexbox-item-projecten {
+    margin: 5px 10px;
+    height: auto;
+  }
+
+  footer {
+    font-weight: 300;
+  }
+
+  .info {
+    color: white;
+    width: 90%;
+    margin: 10px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .uitleg {
+    padding: 0;
+    margin: 0px 5px 25px 5px;
+  
+  }
+
+
+}
+@media only screen and (min-width: 1600px) {
+  .content {
+    margin: 100px 0px 0px 250px;
+    justify-content: center;
+  }
+
+  nav {
+    position: fixed;
+    margin-left: 100px;
+    margin-top: 0px;
+  }
+
+  .flexbox-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0px 50px 0px;
+  }
+  
+
+  .flexbox-item-video {
+    width: 1410px;
+    margin: 5px 5px;
+    height: auto;
+    cursor: default;
+  }
+  
+  .flexbox-item-video-klein {
+    width: 700px;
+    margin: 5px 5px;
+    height: auto;
+    cursor: default;
+  }
+  
+
+
+  body {
+    background-color:  rgb(9, 9, 11);
+  }
+}

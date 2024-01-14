@@ -1,0 +1,290 @@
+/* style opties voor de hele pagina */
+* {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+ background-color:  rgb(9, 9, 11);
+ margin: 0;
+ padding: 0;
+}
+/* Navbar header etc*/
+
+
+.links {
+  color: white;
+}
+
+/* styling voor links / navigatiebar */ 
+
+nav {
+  position: fixed;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.mobiel-nav {
+  display: none;
+}
+
+
+/* Als er op portfolio geklikt wordt zal dit teruggeleid worden naar de home/startpagina */
+
+.home{
+  color: whitesmoke;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.los {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+.content {
+  margin: 50px 0px 0px 250px;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  padding-right: 0px;
+  margin-bottom: 50px;
+}
+
+li a {
+  display: block;
+  text-align: left;
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 25px;
+  padding-right: 0px;
+}
+
+li a:hover {
+  color: orange;
+}
+/* EIND PERSOONLIJKWERK DEEL  PAGINA*/ 
+  
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px 0px 50px 0px;
+}
+
+
+.flexbox-item-projecten {
+  width: 500px;
+  margin: 5px 5px;
+  height: auto;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.flexbox-item-video {
+  width: 500px;
+  margin: 5px 5px;
+  height: auto;
+  max-height: 333.33px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+}
+
+
+.overlay {
+  position: relative;
+}
+
+.overlay img {
+  max-width: 100%;
+  display: block;
+}
+
+.portfolio-mobiel {
+  display: none;
+}
+
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 440px;
+  height: 159px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 125px 30px 50px 30px;
+}
+
+.overlay-text-b {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-right: 20px;
+
+}
+
+.flexbox-item-projecten:hover .overlay-text {
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  font-weight: 200;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+  .titel-nav {
+    display: none;
+
+  }
+  
+  nav {
+    position: relative;
+    width: 90%;
+    margin: 10px 0px 0px 0px;
+    display: none;
+  }
+
+  .mobiel{
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    
+  }
+
+  .active {
+    font-weight: 500;
+    cursor: default;
+    margin-left: 5px;
+  }
+
+
+  .active:hover {
+    font-weight: 500;
+    color: white;
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px 5px;
+    background-color: rgb(9, 9, 11);
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+
+  .portfolio-mobiel{
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .content, .flexbox-container {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .naam-mobiel {
+    color: white;
+    text-align: left;
+    margin: 0;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .content {
+    width: 100%;
+    left: 50%;
+  }
+  
+  
+  .overlay-text {
+    display: none;
+  }
+
+  .flexbox-item-projecten, .flexbox-item-video  {
+    margin: 5px 10px;
+    height: auto;
+  }
+
+  .tekst p, footer {
+    font-weight: 300;
+  }
+
+
+  
+}
+
+@media only screen and (min-width: 1600px) {
+  .content {
+    margin: 100px 0px 0px 250px;
+  }
+
+  nav {
+    position: fixed;
+    margin-left: 100px;
+    margin-top: 0px;
+  }
+
+  .flexbox-item-projecten,.flexbox-item-video {
+    width: 700px;
+  }
+  
+  .overlay-text {
+    width: 640px;
+    height: 292px;
+
+  }
+
+  body {
+    background-color:  rgb(9, 9, 11);
+  }
+}

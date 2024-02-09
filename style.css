@@ -1,0 +1,237 @@
+/* styling algemeen */ 
+* {
+  color: white;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color:  rgb(7, 7, 9);
+}
+
+h1 {
+  font-size: 24px;
+  margin: 5px auto;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 20px; 
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px auto;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 20px; 
+}
+
+.titel-overlay {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.tekst-overlay {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Images Home */ 
+img, video {
+  width: 100%;
+  pointer-events: none;
+}
+
+.img-overmij {
+  margin-top: 50px;
+  width: 50%;
+}
+
+/* Video logo boven navigatie */ 
+.logo-img {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+
+/* Navigatie */ 
+nav {
+  display: inline;
+  position: fixed;
+  margin-left: 100px;
+}
+
+li a {
+  line-height: 25px;
+}
+
+li a:hover {
+  color: orange;
+}
+
+.mobiel {
+  display: none;
+}
+
+
+
+/* linkjes los van de navigatie (contact+overmij), deze zijn wat meer bold  */ 
+.links-los {
+  font-weight: 500;
+}
+
+
+
+/* content */ 
+.home-content {
+  margin: 100px 0px 0px 250px;
+  max-width: 1200px;
+}
+
+.text-container {
+  margin: 10px auto; 
+  max-width: 700px;
+  
+}
+
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.flexbox-item.projecten {
+  position:relative;
+  width: 500px;
+  height: auto;
+  margin: 5px;
+}
+
+.sectie-contact {
+  margin-bottom: 200px;
+}
+
+.contact {
+  margin-bottom: 200px;
+}
+
+#portfolio {
+  width: 1000px;
+}
+
+.lijn-secties {
+  width: 800px;
+  height: 1px;
+  margin: 100px;
+  background-color: orange;
+  opacity: 0.5;
+}
+ 
+/* tekst zoals werkwijze etc */ 
+
+.beschrijving-video {
+  width: 1000px;
+  margin: 50px 0px 25px 0px;
+}
+
+
+/* Styling for hover*/ 
+
+.overlay  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+
+.flexbox-item.projecten:hover .overlay {
+  opacity: 1;
+}
+
+.text-container p a,
+.text-container p span {
+  text-decoration: underline;
+}
+
+/* Styling voor info bovenaan pagina (zodat er ruimte is tussen de titel en de afbeeldingen/werk daaronder */ 
+
+
+@media only screen and (max-width: 1100px) {
+
+  
+  nav {
+    display: none;
+  }
+
+  h1, p {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+
+
+  .home-content  {
+    margin: 10px 5px;
+    display: block;
+  }
+
+  .mobiel{
+    display: block;
+    width: 100%;
+  }
+
+  .img-overmij {
+    margin-top: 25px;
+    width: 100%;
+  }
+  
+
+  .naam-mobiel{
+    float: left;
+  }
+
+  ul {
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 0px 5px;
+    margin: 10px 5px;
+  }
+
+  .titel {
+    width: 100%;
+  }
+
+  .lijn-secties {
+    margin: 100px;
+  }
+
+  
+
+}

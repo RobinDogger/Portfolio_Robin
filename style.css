@@ -14,13 +14,14 @@
 
 body {
   background-color:  rgb(7, 7, 9);
+
 }
 
 h1 {
   font-size: 24px;
-  margin: 5px auto;
+  margin: 0px auto;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.3;
   padding: 0 20px; 
   font-weight: 500;
 }
@@ -29,7 +30,7 @@ p {
   font-size: 16px;
   margin: 5px auto;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.3;
   padding: 0 20px; 
 }
 
@@ -51,6 +52,11 @@ img, video {
   pointer-events: none;
 }
 
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+
 .img-overmij {
   margin-top: 50px;
   width: 50%;
@@ -61,7 +67,6 @@ img, video {
   width: 20%;
   margin-bottom: 20px;
 }
-
 
 /* Navigatie */ 
 nav {
@@ -119,34 +124,13 @@ li a:hover {
   margin: 5px;
 }
 
-.sectie-contact {
-  margin-bottom: 200px;
-}
-
-.contact {
-  margin-bottom: 200px;
-}
-
-#portfolio {
+.projecten-groot {
+  position:relative;
   width: 1000px;
-}
-
-.lijn-secties {
-  width: 800px;
-  height: 1px;
-  margin: 100px;
-  background-color: orange;
-  opacity: 0.5;
+  height: auto;
+  margin: 5px;
 }
  
-/* tekst zoals werkwijze etc */ 
-
-.beschrijving-video {
-  width: 1000px;
-  margin: 50px 0px 25px 0px;
-}
-
-
 /* Styling for hover*/ 
 
 .overlay  {
@@ -175,6 +159,31 @@ li a:hover {
   text-decoration: underline;
 }
 
+/* styling voor button javascript*/ 
+#topBtn {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #4b4b4b;
+  color: white;
+  border: solid 1px;
+  border-color: orange;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+footer {
+  margin: 100px 0px 25px 0px;
+
+}
+
 /* Styling voor info bovenaan pagina (zodat er ruimte is tussen de titel en de afbeeldingen/werk daaronder */ 
 
 
@@ -189,15 +198,23 @@ li a:hover {
     max-width: 90%; /* Adjust max-width for smaller screens */
   }
 
+  .text-container {
+    margin: 10px;
+  }
+
+  h1 {
+    padding-top: 10px;
+  }
 
   .home-content  {
-    margin: 10px 5px;
+    margin: 0px 5px;
     display: block;
   }
 
   .mobiel{
     display: block;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .img-overmij {
@@ -212,15 +229,16 @@ li a:hover {
 
   ul {
     overflow: hidden;
+    width: 100%;
   }
   
   li {
     float: right;
+    
   }
   
   li a {
     display: block;
-    padding: 0px 5px;
     margin: 10px 5px;
   }
 
@@ -228,10 +246,5 @@ li a:hover {
     width: 100%;
   }
 
-  .lijn-secties {
-    margin: 100px;
-  }
-
-  
 
 }

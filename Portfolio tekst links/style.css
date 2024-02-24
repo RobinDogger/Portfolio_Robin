@@ -1,0 +1,236 @@
+/* styling algemeen */ 
+* {
+  color: white;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color:  rgb(7, 7, 9);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0px auto;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+}
+
+.home-cover {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+
+/* Images Home */ 
+img, video {
+  width: 100%;
+  pointer-events: none;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+
+.img-overmij {
+  margin-top: 50px;
+  width: 50%;
+}
+
+/* Video logo boven navigatie */ 
+.logo-img {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+/* Navigatie */ 
+nav {
+  display: inline;
+  position: fixed;
+  margin-left: 100px;
+}
+
+li a {
+  line-height: 25px;
+}
+
+li a:hover {
+  color: orange;
+}
+
+.mobiel {
+  display: none;
+}
+
+
+
+/* linkjes los van de navigatie (contact+overmij), deze zijn wat meer bold  */ 
+.links-los {
+  font-weight: 500;
+}
+
+
+
+/* content */ 
+.home-content {
+  margin: 100px 0px 0px 250px;
+  max-width: 1200px;
+}
+
+.text-container {
+  max-width: 700px;
+  
+}
+
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.flexbox-item.projecten {
+  position:relative;
+  width: 500px;
+  height: auto;
+  margin: 5px;
+}
+
+.projecten-groot {
+  position:relative;
+  width: 1000px;
+  height: auto;
+  margin: 5px;
+}
+ 
+/* Styling for hover*/ 
+
+.overlay  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+
+.flexbox-item.projecten:hover .overlay {
+  opacity: 1;
+}
+
+.text-container p a,
+.text-container p span {
+  text-decoration: underline;
+}
+
+/* styling voor button javascript*/ 
+#topBtn {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #4b4b4b;
+  color: white;
+  border: solid 1px;
+  border-color: orange;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+footer {
+  margin: 100px 0px 25px 0px;
+
+}
+
+/* Styling voor info bovenaan pagina (zodat er ruimte is tussen de titel en de afbeeldingen/werk daaronder */ 
+
+
+@media only screen and (max-width: 1100px) {
+
+  
+  nav {
+    display: none;
+  }
+
+  h1, p {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+
+  .text-container {
+    margin: 10px;
+  }
+
+  h1 {
+    padding-top: 10px;
+  }
+
+  .home-content  {
+    margin: 0px 5px;
+    display: block;
+  }
+
+  .mobiel{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .img-overmij {
+    margin-top: 25px;
+    width: 100%;
+  }
+  
+
+  .naam-mobiel{
+    float: left;
+  }
+
+  ul {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  li {
+    float: right;
+    
+  }
+  
+  li a {
+    display: block;
+    margin: 10px 5px;
+  }
+
+  .titel {
+    width: 100%;
+  }
+
+
+}
